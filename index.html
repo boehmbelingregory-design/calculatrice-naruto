@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Hokage Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculatrice">
+        <button onclick="changerMode()" class="btn-mutation">👁️ Permutation Akatsuki</button>
+        <div class="coin hg"></div>
+        <div class="coin hd"></div>
+        <div class="coin bg"></div>
+        <div class="coin bd"></div>
+
+        <div class="ecran-container">
+            <div class="deco-ecran">🌀 🌀 🗡️</div>
+            <input type="text" id="ecran" readonly placeholder="0">
+        </div>
+
+        <div class="touches">
+            <button onclick="nettoyer()" class="ramen">🍜 C</button>
+            <button onclick="ajouter('/')" class="operateur">✳️ ÷</button>
+            <button onclick="ajouter('*')" class="operateur">✖️ x</button>
+            <button onclick="ajouter('-')" class="operateur">🗡️ -</button>
+
+            <button onclick="ajouter('7')" class="chiffre">7</button>
+            <button onclick="ajouter('8')" class="chiffre">8</button>
+            <button onclick="ajouter('9')" class="chiffre">9</button>
+            <button onclick="ajouter('+')" class="operateur">⚔️ +</button>
+
+            <button onclick="ajouter('4')" class="chiffre">4</button>
+            <button onclick="ajouter('5')" class="chiffre">5</button>
+            <button onclick="ajouter('6')" class="chiffre">6</button>
+            <button onclick="calculer()" class="leaf">🍃 =</button>
+
+            <button onclick="ajouter('1')" class="chiffre">1</button>
+            <button onclick="ajouter('2')" class="chiffre">2</button>
+            <button onclick="ajouter('3')" class="chiffre">3</button>
+            <button onclick="ajouter('0')" class="chiffre">0</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
